@@ -22,7 +22,7 @@ function Login() {
       if (Data.username === "" || Data.password == "") {
         alert("Please fill all the fields")
       } else {
-        const response = await axios.post("http://localhost:5000/api/user/log-in", Data)
+        const response = await axios.post("https://task-manegment-uh4y.onrender.com/api/user/log-in", Data)
         setData({ username: "", password: "" })
         console.log(response);
         localStorage.setItem("id", response.data.id);

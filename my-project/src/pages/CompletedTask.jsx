@@ -22,7 +22,7 @@ function CompletedTask() {
 
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/task/get-Complete-tasks",
+          "https://task-manegment-uh4y.onrender.com/api/task/get-Complete-tasks",
           { headers }
         );
         setData(response.data.data || []); // Ensures Data remains an array

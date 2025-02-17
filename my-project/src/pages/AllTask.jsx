@@ -25,7 +25,7 @@ function AllTask() {
     const fetchTasks = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/task/get-all-tasks",
+          "https://task-manegment-uh4y.onrender.com/api/task/get-all-tasks",
           { headers }
         );
         setData(response.data.data.tasks); 

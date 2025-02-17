@@ -35,7 +35,7 @@ function InputData({ inputDiv, setInputDiv, UpdatedData, setUpdatedData }) {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/task/create-task",
+        "https://task-manegment-uh4y.onrender.com/api/task/create-task",
         Data,
         { headers }
       );
@@ -65,7 +65,7 @@ function InputData({ inputDiv, setInputDiv, UpdatedData, setUpdatedData }) {
   const updateTask = async (id) => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/task/update-tasks/${id}`,
+        `https://task-manegment-uh4y.onrender.com/api/task/update-tasks/${id}`,
         Data,
         { headers }
       );

@@ -28,7 +28,7 @@ function Card({ home, setInputDiv, data , setUpdatedData }) {
   const handleCompleteTasks = async (id) => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/task/update-complete-tasks/${id}`,
+        `https://task-manegment-uh4y.onrender.com/api/task/update-complete-tasks/${id}`,
         {},
         { headers }
       );
@@ -48,7 +48,7 @@ function Card({ home, setInputDiv, data , setUpdatedData }) {
   const handleImportantTask = async (_id) => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/task/update-imp-tasks/${_id}`,
+        `https://task-manegment-uh4y.onrender.com/api/task/update-imp-tasks/${_id}`,
         {},
         { headers }
       );
@@ -68,7 +68,7 @@ function Card({ home, setInputDiv, data , setUpdatedData }) {
   const deleteTask = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/task/delete-tasks/${id}`,
+        `https://task-manegment-uh4y.onrender.com/api/task/delete-tasks/${id}`,
         { headers }
       );
 
